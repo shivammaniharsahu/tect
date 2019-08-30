@@ -2,62 +2,64 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Coming Soon Bootstrap 4 Template Demo</title>
-    <meta name="description" content="Demo of A Free Coming Soon Bootstrap 4 Template by TemplateFlip.com."/>
+    <title>Aavartan</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+
+    
   </head>
-  <body id="top"><div class="site-wrapper">
+  <body onload="myFunction()" id="top">
+    <div id="loading"></div>
+    <div class="site-wrapper">
   <div class="site-wrapper-inner">
     <div class="cover-container">
       <div class="masthead clearfix">
         <div class="inner">
-          <h3 class="masthead-brand">Live Now</h3>
-          <nav class="nav nav-masthead">
-            <a class="nav-link nav-social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a class="nav-link nav-social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a class="nav-link nav-social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-            <a class="nav-link nav-social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          </nav>
+          <h3 class="masthead-brand">LIVE NOW</h3>
         </div>
       </div><br>      <div class="inner cover">
-        <h1 class="cover-heading">Technocracy</h1>
-        <p class="lead cover-copy">The TechnoCracy is the students’ technical committee of NIT Raipur. It was a seed sown in 2007 by a few technical enthusiasts, which has grown and established its strong roots. Currently, it comprises of over 100 members. The vision of TechnoCracy is to bring out the technical thirst in every student through their innovative ideas and help them discover the concealed, untapped avenues of science and technology.</p>
+        <h1 class="cover-heading">OUR SITE HAS SHIFTED</h1>
+        <p class="lead cover-copy">Aavartan is bigger and better this time and so is Aavartan's new website....</br>
+        We have shifted our online presence to a new place...</br>
+        <span style="color:#05F5A2;">You will be redirected to our new website in <span id="countdown">5</span> seconds....</span></br>
+        If you are not redirected <a href="http://Aavartan.nitrr.ac.in/" target="_blank">Click Here</a></p>
       </div>
       <div class="mastfoot">
         <div class="inner">
-          <p>&copy; Team Technocracy: <a href="https://templateflip.com/" target="_blank">Click Here</a></p>
+          <p>&copy; Team TechnoCracy <a href="http://Aavartan.nitrr.ac.in/" target="_blank">Aavartan</a>.</p>
         </div>
       </div>
-      <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="subscribeModalLabel">Get Notified on Launch:</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="recipient-name" class="form-control-label">Enter you e-mail to get notified when we launch</label>
-                  <input type="text" class="form-control" id="recipient-name" placeholder="your-name@example.com">
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default">Subscribe</button>
-            </div>
-          </div>
-        </div>
-    </div>
+      </div>
   </div>
 </div>
+<script>
+  
+     var preloader=document.getElementById('loading');
+     function myFunction(){
+         preloader.style.display='none';
+     }
+     
+     var seconds = 5;
+    
+    function countdown() {
+        seconds = seconds - 1;
+        if (seconds < 0) {
+            // Chnage your redirection link here
+            window.location = "http://Aavartan.nitrr.ac.in/";
+        } else {
+            // Update remaining seconds
+            document.getElementById("countdown").innerHTML = seconds;
+            // Count down using javascript
+            window.setTimeout("countdown()", 500);
+        }
+    }
+    
+    // Run countdown function
+    countdown();
+</script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
